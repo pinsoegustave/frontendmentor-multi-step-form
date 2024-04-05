@@ -1,0 +1,17 @@
+<div className="absolute top-10 left-4">
+            { numberInput.map((numb, index) => (
+              <Link to={numb.link} key={index}>
+              <div className="flex p-2">
+                <div className="w-10 h-10 border-[1.5px] border-LightGray rounded-full hover:bg-Magnolia">
+                  <p className="p-2 ml-2 text-LightGray font-medium hover:text-MarineBlue">
+                    {numb.number}
+                  </p>
+                </div>
+                <div className="ml-3">
+                  <p className="uppercase text-[12px] text-LightGray">{numb.step}</p>
+                  <h2 className="uppercase font-medium">{numb.title}</h2>
+                </div>
+              </div>
+              </Link>
+            ))}
+          </div>
